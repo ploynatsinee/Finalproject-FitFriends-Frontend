@@ -3,7 +3,7 @@ import './CommunityBox.scss'
 
 const CommunityBox = () => {
   return (
-    <div className='box'>CommunityBox</div>
+    <div className='box'>CommunityBoxplot</div>
   )
 }
 
