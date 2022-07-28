@@ -1,6 +1,6 @@
-import React from 'react'
-import './Post.scss'
-import { Avatar } from '@material-ui/core';
+import React from 'react';
+import './Post.scss';
+import Avatar from '@mui/material/Avatar';
 
 export const Post = ({ profilePic, image, username, timestamp, message }) => {
     return (
@@ -10,7 +10,7 @@ export const Post = ({ profilePic, image, username, timestamp, message }) => {
 
                 <div className="postLeftInfo">
                     <h3>{username}</h3>
-                    <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+                    {/* <p>{new Date(timestamp?.toDate()).toUTCString()}</p> */}
                 </div>
             </div>
 
