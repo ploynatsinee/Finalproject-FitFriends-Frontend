@@ -18,7 +18,7 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
             </div>
 
             <div className="postRight">
-                <p>{username}: {message}</p>
+                <p><span>{username}:</span> {message}</p>
                 <div className="postImage">
                     <img src={image} alt="" />
                 </div>
