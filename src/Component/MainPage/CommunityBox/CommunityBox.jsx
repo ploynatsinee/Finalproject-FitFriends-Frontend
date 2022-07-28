@@ -17,6 +17,14 @@ const CommunityBox = () => {
                 username='Natsinee'
                 image={postImage}
             />
+      <Post 
+                key='2'
+                profilePic={womanavatar}
+                message='Swimming with my sister today, so funnyyy ha ha ha ha ha ha!'
+                timestamp='This is a timestamp'
+                username='Mint'
+                
+            />
     </div>
   )
 }
