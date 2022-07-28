@@ -1,6 +1,9 @@
 import React from 'react';
 import './Post.scss';
+
+//add materialUI
 import Avatar from '@mui/material/Avatar';
+
 
 export const Post = ({ profilePic, image, username, timestamp, message, location }) => {
     return (
@@ -26,7 +29,8 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
 
                 <div className="postOptions">
                     <div className="reply">
-                        <p>reply</p>
+                    <p>reply</p>
+                        
                     </div>
                     <div className="privateChat">
                         <p>private chat</p>
