@@ -3,6 +3,9 @@ import './Post.scss';
 
 //add materialUI
 import Avatar from '@mui/material/Avatar';
+import comment from './img/comment.png';
+import locationicon from './img/locationicon.png';
+import send from './img/send.png';
 
 
 export const Post = ({ profilePic, image, username, timestamp, message, location }) => {
@@ -21,22 +24,22 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
             </div>
 
             <div className="postRight">
-                <p><span>{username}:</span> {message}</p>
+                <p> {message}</p>
                 <div className="postImage">
-                    <img src={image} alt="" />
+                    <img src={image} alt=""/>
                 </div>
 
 
                 <div className="postOptions">
                     <div className="reply">
-                    <p>reply</p>
+                    <p><img src={comment} alt='comment' />reply</p>
                         
                     </div>
                     <div className="privateChat">
-                        <p>private chat</p>
+                        <p><img src={send} alt='send' />chat</p>
                     </div>
                     <div className="location">
-                        <p>location</p>
+                        <p><img src={locationicon} alt='locationicon' />{location}Bangkok</p>
                     </div>
                 </div>
             </div>
