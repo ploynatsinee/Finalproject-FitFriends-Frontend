@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import CommunityBox from './Component/MainPage/CommunityBox/CommunityBox'
 import SideBar from './Component/MainPage/SideBar/SideBar'
+import Useronline from './Component/MainPage/PersonInform/UserOnline'
 // import MainPage from './Component/MainPage/SideBar/MainPage'
 
 
@@ -19,7 +20,7 @@ function App() {
           < CommunityBox />
         </div>
         <div className='useronline'>
-
+          <Useronline />
         </div>
       </div>
 
