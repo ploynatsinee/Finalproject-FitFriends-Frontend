@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.Nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    height: 8rem;
+    max-height: 100%;
+    background-color: #46469C;
+}
+
+
+.Nav-content ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 3.9rem;
+}
+
+.Nav-content a:hover{
+    cursor: pointer;
+    color: white;
+    
+}
+
+
+.Nav-content img{
+   
+    margin: auto auto;
+    width: 6.3rem;
+    height: 5rem;
+    
+}
+
+.Nav-content li{
+    display: flex;
+   
+    
+    
+}
+
+
+.login-name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-right: 0.25rem;
+    width: 7rem;
+    height: 5rem;
+    gap: 0.5rem;
+}
+
+
+.login-name button{
+    justify-content: center;
+    text-align: center;
+    width: 4.5rem;
+    height: 3rem;
+}
+
+
+
+
+.Nav-content li{
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
