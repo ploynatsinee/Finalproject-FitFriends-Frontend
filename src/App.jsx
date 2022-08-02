@@ -1,8 +1,8 @@
-import { useState } from 'react'
+
 import './App.scss'
 import CommunityBox from './Component/MainPage/CommunityBox/CommunityBox'
 import SideBar from './Component/MainPage/SideBar/SideBar'
-import Useronline from './Component/MainPage/PersonInform/UserOnline'
+import Useronline from './Component/MainPage/UserOnline/UserOnline'
 import Navbar from './Component/Navbar/Navbar'
 // import MainPage from './Component/MainPage/SideBar/MainPage'
 
