@@ -6,8 +6,21 @@
 }
 
 .main-session {
-    display: grid-row;
-    margin-top: 100px;
+    display: flex;
+    margin-top: .2rem;
     
 }
 
+.App-sidebar {
+    margin-right: 15rem;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.useronline {
+    margin-left: 5rem;
+    margin-top: 1.3rem;
+    
+}
