@@ -13,27 +13,35 @@
     height: 8rem;
     max-height: 100%;
     background-color: #46469C;
+    
 }
 
+.logo {
+    img{
+        height: 3rem;
+    }
+    
+}
 
 .Nav-content ul{
   display: flex;
   justify-content: space-around;
   gap: 3.9rem;
+  color: whitesmoke;
 }
 
 .Nav-content a:hover{
     cursor: pointer;
-    color: white;
-    
+    color:  #1b1b41;
+    font-weight: bolder;
 }
 
 
 .Nav-content img{
-   
-    margin: auto auto;
-    width: 6.3rem;
-    height: 5rem;
+    margin-top: .8rem;
+    margin-left: .8rem;
+    width: 10rem;
+    height: 6.5rem;
     
 }
 

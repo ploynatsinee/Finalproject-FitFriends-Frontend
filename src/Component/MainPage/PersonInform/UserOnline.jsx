@@ -18,80 +18,70 @@ function Useronline() {
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+       
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+       
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
           <Typography fontWeight={700}>Michael Scott</Typography>
         </Stack>
-        <IconButton>
-        </IconButton>
+        
       </Box>
 
       <Stack
