@@ -8,19 +8,16 @@
 .main-session {
     display: flex;
     margin-top: .2rem;
+    column-gap: 5rem;
     
-}
-
-.App-sidebar {
-    margin-right: 15rem;
 }
 
 .main {
     flex-grow: 1;
+   
 }
 
 .useronline {
-    margin-left: 5rem;
-    margin-top: 1.3rem;
     
+    margin-top: 1.3rem;    
 }

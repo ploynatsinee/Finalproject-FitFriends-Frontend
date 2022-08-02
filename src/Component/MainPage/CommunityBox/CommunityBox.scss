@@ -1,7 +1,12 @@
 
-div {
+.box {
     color:black;
+    width:100%;
+    overflow: auto;
+    height: 80vh;
 }
 
-
+.box::-webkit-scrollbar{
+    display: none;
+}
 
