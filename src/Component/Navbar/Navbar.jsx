@@ -1,12 +1,13 @@
 import React from "react";
 import './Navbar.scss';
+import logo from './logo.png'
 
 
 function Navbar() {
     return (
         <div className="Nav-content">
             <div className="logo">
-                <img src="/images/logo-removebg-preview.png" />
+                <img src={logo}/>
             </div>
 
             <ul>

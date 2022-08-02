@@ -12,7 +12,7 @@ import AddIcon from '@mui/icons-material/Add';
 
 function Useronline() {
   return (
-    <Card>
+    <Card className='container-card'>
       <Box sx={{ p: 2, display: 'flex' }}>
         <Avatar variant="circle" src="avatar1.jpg" />
         <Stack spacing={0.5}>
@@ -93,7 +93,7 @@ function Useronline() {
         <IconButton>
         </IconButton>
       </Box>
-      
+
       <Stack
         direction="row"
         alignItems="center"
