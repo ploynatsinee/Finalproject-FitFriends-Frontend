@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import CommunityBox from './Component/MainPage/CommunityBox/CommunityBox'
 import SideBar from './Component/MainPage/SideBar/SideBar'
 import Useronline from './Component/MainPage/PersonInform/UserOnline'
