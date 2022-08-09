@@ -1,0 +1,116 @@
+.register {
+    //จัดกลางหน้าจอ จาก google
+    // top: 50%;  
+    // left: 50%;  
+    // transform: translate(-50%, -50%);
+    margin: 10px auto;
+    width: 30%;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    
+    form {
+        height: 450px;
+        width: 100%;
+        background-color: rgba(70, 70, 156, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1.5em; // border-radiusคือความโค้งของกล่องที่เก็บ
+
+        h1 {
+            color: rgb(252, 252, 252);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .contentRegister {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .listContentRegister{
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                height: 40px;
+                margin: 5px;
+                // background-color: white;
+                border: 0.1px solid rgba(3, 3, 3, 0); // กำหนดเพื่อจัดให้เท่ากัน
+            }
+
+            input::placeholder { //placeholder คือแสดงข้อความในกล่อง text
+                font-weight: bold;
+                opacity: 0.8;
+                color: rgb(5, 5, 5);
+                text-align: center;
+            }
+
+            input {
+                height: 40px;
+                width: 90%;
+                margin: 5px;
+                padding: 0;
+                border: 0.1px solid rgba(3, 3, 3, 0); // กำหนดเพื่อจัดให้เท่ากัน
+            }
+        }
+    }
+
+    button {
+        height: 40px;
+        width: 30%;
+        margin-top: 10px;
+        background-color: rgba(43, 36, 36, 1);
+        color: white;
+        border-radius: 1em;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+        border-radius: 1em;
+    }
+
+    .underRegister {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        h3 {
+            margin: 10px;
+            span {
+                color: white;
+                text-decoration: none; //text-decorationคือเอาเส้นใต้ออก
+            }
+            span:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .register {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .register {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .register {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .register {
+        font-size: 12px;
+        width: 90%;
+        height: 450px;
+        form {
+            height: 430px;
+            width: 100%;
+        }
+    }
+}

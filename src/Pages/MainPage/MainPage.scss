@@ -1,0 +1,19 @@
+.MainPage {
+    padding:0; 
+    margin:0;
+    box-sizing: border-box; 
+}
+
+.main-session {
+    display: flex;
+    margin-top: .2rem;
+    column-gap: 5rem;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.useronline {
+    margin-top: 1.3rem;    
+}
