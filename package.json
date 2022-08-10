@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@date-io/date-fns": "^2.14.0",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.94",
     "@mui/material": "^5.9.2",
     "@mui/styled-engine-sc": "^5.8.0",
+    "@mui/x-date-pickers-pro": "^5.0.0-beta.4",
+    "date-fns": "^2.29.1",
     "inter-ui": "^3.19.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -15,5 +15,16 @@
 }
 
 .useronline {
-    margin-top: 1.3rem;    
+    margin-top: 1.3rem;
+       
+}
+
+.useronline-date {
+    display:flex;
+    flex-direction: column;
+}
+
+.DatePicker {
+    width: 9rem;
+    margin-right: 60px;
 }
