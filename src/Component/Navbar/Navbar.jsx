@@ -1,7 +1,7 @@
 import React from "react";
 import './Navbar.scss';
 import logo from './logo.png'
-
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -19,8 +19,8 @@ function Navbar() {
             </div>
 
             <div className="login-name">
-                <button><a id='#' className="sign-in">Sign in</a></button>
-                <button><a id='#' className="sign-up">Sign up</a></button>
+                <button><Link to='/Login'><a id='#' className="sign-in">Sign in</a></Link></button>
+                <button><Link to='/Register'><a id='#' className="sign-up">Sign up</a></Link></button>
             </div>
 
 
