@@ -21,7 +21,7 @@ const SideBar = () => {
       <a href='#Aerobic'><img className='Aerobicicon' src={Aerobicicon} alt="Aerobicicon" ></img></a>
       <a href='#Strengthtrainning'><img className='Strengthtrainningicon' src={Strengthtrainningicon} alt="Strengthtrainningicon" ></img></a>
       <a href='#Others'><img className='Othersicon' src={Othersicon} alt="Othersicon" ></img></a>
-      <a href='#Addpost'><img className='Addposticon' src={Addposticon} alt="Addposticon" ></img></a>
+      <Link to='/Post'><a href='#Addpost'><img className='Addposticon' src={Addposticon} alt="Addposticon" ></img></a></Link>
     </div>
     // </Router>  
   )
