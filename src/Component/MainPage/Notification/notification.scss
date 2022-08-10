@@ -1,0 +1,16 @@
+.notification {
+    position: relative;
+    top: -90px;
+    right: -180px;
+}
+
+.circle-count {
+    font-size: 14px;
+    position: absolute;
+    padding: .6rem;
+    border-radius: 2rem;
+    width:2rem;
+    height: 2rem;
+    color: rgb(31, 31, 31);
+    background-color: rgb(255, 255, 255);
+}

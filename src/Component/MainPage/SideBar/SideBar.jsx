@@ -9,6 +9,7 @@ import Strengthtrainningicon from './Strengthtrainningicon.png'
 import Othersicon from './Othersicon.png'
 import Addposticon from './Addposticon.png'
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import Notification from '../notification/notification'
 
 const SideBar = () => {
   return (

@@ -16,10 +16,7 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
 
                 <div className="postLeftInfo">
                     <h3>{username}</h3>
-                    <p>{new Date(timestamp).toUTCString()}</p>
-
-                    {/* //ลบ toDate ออกไปเพราะerr */}
-
+                    <p>{timestamp}</p>
                 </div>
             </div>
 
