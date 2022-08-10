@@ -1,7 +1,7 @@
 import React from "react";
-import "./ProfilePage.css"
+import "./ProfilePage.scss"
 import { useState } from "react";
-import MyActivites from "../../Components/Profile-MyActivites/MyActivities";
+import MyActivites from "../../Component/Profile-MyActivities/MyActivities";
 
 const ProfilePage= () =>{
 

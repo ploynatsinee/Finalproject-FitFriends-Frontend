@@ -1,7 +1,7 @@
 import React from "react";
-import CardMyActivites from "../Profile-CardMyActivies/CardMyActivies";
-import "./MyActivites.css"
-const MyActivites=()=>{
+import CardMyActivites from "../Profile-CardMyActivities/CardMyActivities";
+import "./MyActivities.css"
+const MyActivities=()=>{
     const textComment = " Simply dummy text of the printing and is simply dummy text of the printing and is simply dummy text of the printing and text of the printing and is simply dummy text of the printing and the printing "
     const imageComment = "../../images/garden1.jpg"
     const location = "สวนจตุจักร"
@@ -11,13 +11,13 @@ const MyActivites=()=>{
     console.log(textComment.length)
     return(
         <div className='show-card-activities'>
-            <CardMyActivites textComment={textComment} imageComment={imageComment} location={location}
+            <CardMyActivities textComment={textComment} imageComment={imageComment} location={location}
                 date = {date} time = {time} unitTime={unitTime}/>
-            <CardMyActivites/>
-            <CardMyActivites/>
-            <CardMyActivites/>
-            <CardMyActivites/>
+            <CardMyActivities/>
+            <CardMyActivities/>
+            <CardMyActivities/>
+            <CardMyActivities/>
         </div>
     )
 }
-export default MyActivites
+export default MyActivities

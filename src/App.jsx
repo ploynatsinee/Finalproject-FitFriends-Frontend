@@ -12,14 +12,14 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import MainPage from './Pages/MainPage/MainPage';
 import { Post } from './Pages/Post/Post';
-import ProfilePage from './Pages/ProfilePage/ProfilePage'
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      {/* <div className='main-session'>
+      {/* <Navbar />
+      <div className='main-session'>
          <div className='App-sidebar'>
            <SideBar />
         </div> */}
@@ -35,9 +35,9 @@ function App() {
         <Navbar />
         {/* นอก tag Routes คือการใส่ทุกหน้า */}
         <Routes>
-          <Route path='/' element= {<Login />} />
+          <Route path='/' element= {<MainPage />} />
           <Route path='/Register' element= {<Register />} />
-          <Route path='/MainPage' element= {<MainPage />} />
+          <Route path='/Login' element= {<Login />} />
           <Route path='/Post' element= {<Post />} />
           <Route path='/ProfilePage' element= {<ProfilePage />} />
         </Routes>

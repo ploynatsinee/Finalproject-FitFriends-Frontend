@@ -1,7 +1,7 @@
-import './MainPage.scss'
-import CommunityBox from '../../Components/Main-CommunityBox/CommunityBox'
-import SideBar from '../../Components/Main-SideBar/SideBar'
-import Useronline from '../../Components/Main-UserOnline/UserOnline'
+import './MainPage.scss';
+import CommunityBox from '../../Component/MainPage/CommunityBox/CommunityBox';
+import SideBar from '../../Component/MainPage/SideBar/SideBar';
+import Useronline from '../../Component/MainPage/UserOnline/UserOnline';
 import { Link } from 'react-router-dom';
 
 function MainPage() {

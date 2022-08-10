@@ -1,8 +1,8 @@
-import './CardMyActivites.css'
+import './CardMyActivities.css'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const CardMyActivites = (props) => {
+const CardMyActivities = (props) => {
     console.log(props.imageComment)
     return(
         <div className="card">
@@ -46,4 +46,4 @@ const CardMyActivites = (props) => {
         </div>
     )
 }
-export default CardMyActivites
+export default CardMyActivities
