@@ -1,90 +1,437 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-.Nav-content {
+.Nav-content{
+    display: flex;
+    background-color: #46469C;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/* .Nav-content1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 100%;
     height: 100%;
+    height: 7rem;
+    height: 8rem;
     height: 8rem;
     max-height: 100%;
     background-color: #46469C;
-    z-index: 30;
-}
-
-.logo {
-    img{
-        height: 3rem;
-        margin-right: 15rem;
-    }
-    
-}
-
-.menu {
-    margin-top: 3rem;
-}
-
-.Nav-content ul{
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
-  color: whitesmoke;
-}
-
-.Nav-content a:hover{
-    cursor: pointer;
-    color:  #1b1b41;
-    font-weight: bolder;
-}
-
-
-.Nav-content img{
-    margin-top: 1rem;
-    margin-left: .8rem;
-    width: 8.5rem;
-    height: 6rem;
-    
-}
-
-.Nav-content li{
+} */
+.Nav-ul{
     display: flex;
-   
-    
-    
-}
-
-
-.login-name{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    padding-right: 0.25rem;
-    width: 300px;
-    height: 5rem;
-    margin-left: auto;
-    gap: 0.5rem;
+    flex-direction: row;
+
+}
+.Nav-ul li {
+    background-color: #46469C;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.5rem;
+    margin-left:3rem;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.Nav-ul li:hover{
+    background-color: #fab869;
+    color: rgb(0, 0, 0);
 }
 
 
-.login-name button{
+
+
+    
+
+
+ .Nav-mobile {
+    display: none;
+} 
+
+ .Nav-content1 ul {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem;
+} 
+
+
+.login-name :hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fab869;
+}
+
+.Nav-content1 img {
+    margin: 1.2rem auto;
+    width: 6rem;
+    height: auto;
+}
+
+
+/* .Nav-content1 li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+} */
+.Nav-content .logo {
+    padding-left:25px;
+}
+
+/* .Nav-content1 li {
+    display: flex;
+} */
+
+.logo img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.login-name {
+    /* margin: 1.5em; */
+    /* padding-right: 30px; */
+    padding-right: 25px;
+    
+}
+.login-name a {
+    font-weight: 600
+}
+.login-name i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.login-name button {
+    border-radius: 10px;
     justify-content: center;
     text-align: center;
-    width: 8rem;
+    width: 6rem;
     height: 3rem;
+    padding: 10px 10px 10px 10px;
+    background-color: #F2A950;
+    margin-right: 5px;
+}
+
+.toggle-bar i{
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.tab-mobile{
+    width:50%;
+    height: 500px;
+    background-color: #46469C;
+    position: absolute;
+    right: -100%;
+    top:80px;
+    transition: 300ms
+}
+
+.tab-mobile.active {
+    width:50%;
+    height: 500px;
+    background-color: #46469C;
+    position: absolute;
+    right: 0;
+    top:80px;
+    transition: 800ms;
+    border-radius: 20px;
+    
+}
+
+.container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mobile-login-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.mobile-login-name button {
     border-radius: 10px;
-    border-color: #46469C;
+    justify-content: center;
+    text-align: center;
+    width: 8em;
+    height: 3rem;
+    padding: 10px 10px 10px 10px;
+    background-color: #F2A950;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mobile-login-name i {
+   margin-right: 10px;
+}
+.mobile-login-name :hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fab869;
+}
+.mobile-nav-ul li {
+    background-color: #46469C;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+ 
+}
+.mobile-nav-ul li:hover {
+    background-color: #fab869;
+    color: rgb(0, 0, 0);
+}
+
+.Nav-content.hide{
+
+    display: none;
+    
+}
+
+.tab-mobile {
+    display: none;
 }
 
 
+/* ==================== MEDIA QUERY ================== */
+@media screen  and (min-width: 987px){
+    div .Nav-mobile{
+        display: none;
+    }
+  
 
-
-.Nav-content li{
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  margin: auto auto;
+    .tab-mobile {
+        display: none;
+    }
 }
+
+@media screen and (max-width :987px) {
+    .ul,.login-name {
+        display: none;
+    }
+}
+
+
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 6rem;
+        display: flex;
+        
+    }
+    .logo-mobile img {
+        height: 5.5rem;
+        width: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .Nav-ui-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+    .Nav-ui-mobile > #myLinks{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 3rem;
+        
+    }
+    .Nav-ui-mobile #myLinks img {
+        width: 3rem;
+        height: 4rem;
+        border-radius: 2rem;
+        margin-top: 0.75rem;
+        margin-left: 3.5rem;
+    }
+    .login-name-mobile {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        max-width: 100%;
+        
+    }
+    .login-name-mobile button {
+        border-radius: 0.5rem;
+        height: 4rem;
+        width: 4rem;
+        
+    }
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+
+/* ==================== MEDIA QUERY ================== */
+
+@media screen and (max-width :985px) {
+    div .Nav-content {
+        display: none;
+    }
+
+    .container-mobile{
+        display: none;
+    }
+
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 6rem;
+        display: flex;
+        
+    }
+    .logo-mobile img {
+        height: 5.5rem;
+        width: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .Nav-ui-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+    .Nav-ui-mobile > #myLinks{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 2.5rem;
+        
+    }
+    .Nav-ui-mobile #myLinks img {
+        width: 2.6rem;
+        height: 3rem;
+        border-radius: 2rem;
+        margin-top: 1.35rem;
+        margin-left: 3.5rem;
+    }
+    .login-name-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+        margin-right: 1rem;
+        
+        
+    }
+    .login-name-mobile button {
+        border-radius: 0.5rem;
+        height: 3rem;
+        width: 4rem;
+        gap: 1rem;
+        
+    }
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+} 
+
+/* ==================== MEDIA QUERY ================== */
+
+
+@media screen and (max-width :768px) {
+    .Nav-content1 {
+        display: none;
+    }
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-mobile img {
+        max-width: 100%;
+        width: 6rem;
+        height: 6rem;
+        padding-left: 0.5rem;
+    }
+    .Nav-ui-mobile #myLinks img {
+        width:2.5rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .login-name-mobile {
+        text-align: center;
+        justify-content: center;
+        margin-right: 1rem;
+        padding: 1.55rem 1.98rem;
+        max-width: 100%;
+    }
+    .login-name-mobile button {
+        border-radius: 1rem;
+        width: 3rem;
+        height: 2rem;
+    }
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+} 
+
+/* ==================== MEDIA QUERY ================== */
+
+@media screen and (max-width :390px) {
+    .Nav-content1 {
+        display: none;
+    }
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-mobile img {
+        display: none;
+    }
+    .Nav-ui-mobile #myLinks {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 1rem;
+    }
+    .Nav-ui-mobile #myLinks img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+    .login-name-mobile {
+        padding-top: 1.3rem;
+        max-width: 100%;
+    }
+    .login-name-mobile button {
+        border-radius: 2rem;
+    }
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+} 
