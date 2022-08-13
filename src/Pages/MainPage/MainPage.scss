@@ -27,3 +27,29 @@
 .DatePicker {
     width: 14.5rem;
 }
+
+
+
+/* ==================== MEDIA QUERY ================== */
+@media screen  and (max-width: 987px) {
+    .useronline-date {
+        display: none;
+    }
+    .box {
+        margin-right: 4rem;
+    }
+}
+
+/* ==================== MEDIA QUERY ================== */
+@media screen and (max-width :884px) {
+    .useronline-date {
+        display: none;
+    }
+}
+
+/* ==================== MEDIA QUERY ================== */
+@media screen and (max-width :768px) {
+    .useronline-date {
+        display: none;
+    }
+}
