@@ -10,7 +10,6 @@ function MainPage() {
 
   return (
     <div className="MainPage">
-      <Link to='/ProfilePage'><h1>Profile</h1></Link>
       <div className='main-session'>
         <div className='App-sidebar'>
           <SideBar />

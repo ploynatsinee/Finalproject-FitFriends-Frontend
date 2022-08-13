@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 import { useState } from 'react'
+import { color } from "@mui/system";
 function Navbar() {
     const [tabMobile, setTabMobile] = useState(false)
     const [showNavbar, setShowNavbar] = useState(true)
@@ -34,16 +35,16 @@ function Navbar() {
                 </div>
                 <div className="ul">
                     <ul className="Nav-ul">
-                        <li>Community</li>
-                        <li>Add Post</li>
-                        <li>My Activities</li>
+                        <li><Link to='/' style={{ textDecoration: 'none', color: 'white'  }}>Community</Link></li>
+                        <li><Link to='/Post' style={{ textDecoration: 'none', color: 'white'  }}>Add Post</Link></li>
+                        <li><Link to='/ProfilePage' style={{ textDecoration: 'none' , color: 'white' }}>My Activities</Link></li>
 
                     </ul>
                 </div>
 
                 <div className="login-name">
-                    <button><Link to='/login'><a id='#' className="sign-in"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></Link></button>
-                    <button><Link to='/Register'><a id='#' className="sign-up"><i class="fa-solid fa-user-plus"></i>Sign up</a></Link></button>
+                    <button><Link to='/login' style={{ textDecoration: 'none', color: 'black'  }}><a id='#' className="sign-in"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></Link></button>
+                    <button><Link to='/Register' style={{ textDecoration: 'none', color: 'black'  }}><a id='#' className="sign-up"><i class="fa-solid fa-user-plus"></i>Sign up</a></Link></button>
                 </div>
                 <div className="nav-mobile">
                     <div className="toggle-bar">
