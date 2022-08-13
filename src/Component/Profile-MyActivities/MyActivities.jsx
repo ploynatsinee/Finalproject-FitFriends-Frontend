@@ -11,12 +11,12 @@ const MyActivities=()=>{
     console.log(textComment.length)
     return(
         <div className='show-card-activities'>
-            <CardMyActivities textComment={textComment} imageComment={imageComment} location={location}
+            <CardMyActivites textComment={textComment} imageComment={imageComment} location={location}
                 date = {date} time = {time} unitTime={unitTime}/>
-            <CardMyActivities/>
-            <CardMyActivities/>
-            <CardMyActivities/>
-            <CardMyActivities/>
+            <CardMyActivites/>
+            <CardMyActivites/>
+            <CardMyActivites/>
+            <CardMyActivites/>
         </div>
     )
 }

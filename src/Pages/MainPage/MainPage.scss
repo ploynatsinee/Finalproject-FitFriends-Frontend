@@ -53,3 +53,13 @@
         display: none;
     }
 }
+
+@media screen and (max-width :640px) {
+    .useronline-date {
+        display: none;
+    }
+    .App-sidebar {
+        display: none;
+    }
+}
+
