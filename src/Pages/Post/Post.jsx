@@ -149,7 +149,7 @@ export const Post = () => {
         
         <div className='buttonPost'>
             <button className="saveButton" type="submit">SAVE</button> 
-            <Link to='/MainPage'><button className="cancelButton" type="submit" >CANCEL</button></Link>
+            <Link to='/'><button className="cancelButton" type="submit" >CANCEL</button></Link>
         </div>  
         </form>
         </div>
