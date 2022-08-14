@@ -15,26 +15,14 @@
     
 }
 
-/* .Nav-content1 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    height: 7rem;
-    height: 8rem;
-    height: 8rem;
-    max-height: 100%;
-    background-color: #46469C;
-} */
 .Nav-ul{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    
+
 }
-.ul .Nav-ul li {
-    text-decoration: none;
+.Nav-ul li {
     background-color: #46469C;
     padding: 10px 10px 10px 10px;
     border-radius: 1.5rem;
@@ -45,7 +33,7 @@
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
-    
+
 }
 
 .Nav-ul li:hover{
@@ -53,23 +41,6 @@
     color: rgb(0, 0, 0);
 }
 
-
-
-
-    
-
-
- .Nav-mobile {
-    display: none;
-} 
-
- .Nav-content1 ul {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap: 7rem;
-} 
 
 
 .login-name :hover {
@@ -85,19 +56,10 @@
 }
 
 
-/* .Nav-content1 li {
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    margin: auto auto;
-} */
 .Nav-content .logo {
     padding-left:25px;
 }
 
-/* .Nav-content1 li {
-    display: flex;
-} */
 
 .logo img:hover {
     transition: 0.5s;
@@ -105,8 +67,7 @@
 }
 
 .login-name {
-    /* margin: 1.5em; */
-    /* padding-right: 30px; */
+    
     padding-right: 25px;
     
 }
@@ -214,19 +175,10 @@
     
 }
 
-.tab-mobile {
-    display: none;
-}
-
 
 /* ==================== MEDIA QUERY ================== */
 @media screen  and (min-width: 987px){
-    div .Nav-mobile{
-        display: none;
-    }
-  
-
-    .tab-mobile {
+    .nav-mobile{
         display: none;
     }
 }
@@ -237,202 +189,3 @@
     }
 }
 
-
-    .Nav-mobile {
-        margin: auto;
-        background-color: #46469C;
-        height: 6rem;
-        display: flex;
-        
-    }
-    .logo-mobile img {
-        height: 5.5rem;
-        width: 5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .Nav-ui-mobile {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 100%;
-    }
-    .Nav-ui-mobile > #myLinks{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        gap: 3rem;
-        
-    }
-    .Nav-ui-mobile #myLinks img {
-        width: 3rem;
-        height: 4rem;
-        border-radius: 2rem;
-        margin-top: 0.75rem;
-        margin-left: 3.5rem;
-    }
-    .login-name-mobile {
-        padding-top: 1rem;
-        padding-left: 1rem;
-        max-width: 100%;
-        
-    }
-    .login-name-mobile button {
-        border-radius: 0.5rem;
-        height: 4rem;
-        width: 4rem;
-        
-    }
-    .login-name-mobile button a {
-        text-decoration: none;
-    }
-
-/* ==================== MEDIA QUERY ================== */
-
-@media screen and (max-width :985px) {
-    div .Nav-content {
-        display: none;
-    }
-
-    .container-mobile{
-        display: none;
-    }
-
-    .Nav-mobile {
-        margin: auto;
-        background-color: #46469C;
-        height: 6rem;
-        display: flex;
-        
-    }
-    .logo-mobile img {
-        height: 5.5rem;
-        width: 5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .Nav-ui-mobile {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 100%;
-    }
-    .Nav-ui-mobile > #myLinks{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        gap: 2.5rem;
-        
-    }
-    .Nav-ui-mobile #myLinks img {
-        width: 2.6rem;
-        height: 3rem;
-        border-radius: 2rem;
-        margin-top: 1.35rem;
-        margin-left: 3.5rem;
-    }
-    .login-name-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding-top: 1.2rem;
-        padding-left: 1rem;
-        margin-right: 1rem;
-        
-        
-    }
-    .login-name-mobile button {
-        border-radius: 0.5rem;
-        height: 3rem;
-        width: 4rem;
-        gap: 1rem;
-        
-    }
-    .login-name-mobile button a {
-        text-decoration: none;
-    }
-} 
-
-/* ==================== MEDIA QUERY ================== */
-
-
-@media screen and (max-width :768px) {
-    .Nav-content1 {
-        display: none;
-    }
-    .Nav-mobile {
-        margin: auto;
-        background-color: #46469C;
-        height: 5.5rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo-mobile img {
-        max-width: 100%;
-        width: 6rem;
-        height: 6rem;
-        padding-left: 0.5rem;
-    }
-    .Nav-ui-mobile #myLinks img {
-        width:2.5rem;
-        height: 2rem;
-        border-radius: 0.5rem;
-        margin-top: 1.5rem;
-        margin-left: 1.5rem;
-    }
-    .login-name-mobile {
-        text-align: center;
-        justify-content: center;
-        margin-right: 1rem;
-        padding: 1.55rem 1.98rem;
-        max-width: 100%;
-    }
-    .login-name-mobile button {
-        border-radius: 1rem;
-        width: 3rem;
-        height: 2rem;
-    }
-    .login-name-mobile button a {
-        text-decoration: none;
-    }
-} 
-
-/* ==================== MEDIA QUERY ================== */
-
-@media screen and (max-width :390px) {
-    .Nav-content1 {
-        display: none;
-    }
-    .Nav-mobile {
-        margin: auto;
-        background-color: #46469C;
-        height: 5rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo-mobile img {
-        display: none;
-    }
-    .Nav-ui-mobile #myLinks {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        gap: 1rem;
-    }
-    .Nav-ui-mobile #myLinks img{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        list-style: none;
-        margin-bottom: 2rem;
-    }
-    .login-name-mobile {
-        padding-top: 1.3rem;
-        max-width: 100%;
-    }
-    .login-name-mobile button {
-        border-radius: 2rem;
-    }
-    .login-name-mobile button a {
-        text-decoration: none;
-    }
-} 

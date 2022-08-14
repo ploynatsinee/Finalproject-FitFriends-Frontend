@@ -30,7 +30,7 @@ function Navbar() {
             <div className={showNavbar ? 'Nav-content' : 'Nav-content hide'}>
                 <div className="Nav-content1">
                     <div className="logo">
-                        <a href="#home"><img src={logo} /></a>
+                    <Link to='/'><img src={logo} /></Link>
                     </div>
                 </div>
                 <div className="ul">
@@ -58,9 +58,9 @@ function Navbar() {
                             </div>
                             <div className="mobile-ul">
                                 <ul className="mobile-nav-ul">
-                                    <li onClick={toggleMobile}>Community</li>
-                                    <li onClick={toggleMobile}>Add Post</li>
-                                    <li onClick={toggleMobile}>My Activities</li>
+                                    <li onClick={toggleMobile}><Link to='/' style={{ textDecoration: 'none', color: 'white'  }}>Community</Link></li>
+                                    <li onClick={toggleMobile}><Link to='/Post' style={{ textDecoration: 'none', color: 'white'  }}>Add Post</Link></li>
+                                    <li onClick={toggleMobile}><Link to='/Register' style={{ textDecoration: 'none', color: 'white'  }}>My Activities</Link></li>
 
                                 </ul>
                             </div>
@@ -71,28 +71,8 @@ function Navbar() {
 
             </div>
 
-         {/* ===================================MEDIA QUERY========================================== */}
 
-            <div className="Nav-mobile">
-                <div className="logo-mobile">
-                    <img src={logo} />
-                </div>
-
-                <div className="Nav-ui-mobile">
-                    <div id="myLinks">
-                        <li><a href="#Community" id='#community'><img src={community} alt="Community" /></a></li>
-                        <li><a href="Workout" id='#workout'><img src={workout} alt="workout" /></a></li>
-                        <li><a href="Recipes" id='#recipes'><img src={recipes} alt="recipes" /></a></li>
-                        <li><a href="Goals" id='#goals'><img src={goals} alt="goals" /></a></li>
-
-
-                        <div className="login-name-mobile">
-                            <button><Link to='/login'><a href="#" id='#' className="sign-in">Sign in</a></Link></button>
-                            <button><Link to='/Register'><a href="#" id='#' className="sign-up">Sign up</a></Link></button>
-                        </div>
-                    </div>
-                </div>
-            </div >
+            
         </div >
 
     )
