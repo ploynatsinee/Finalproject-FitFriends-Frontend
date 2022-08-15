@@ -6,46 +6,63 @@
     z-index: 2;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(255, 168, 17);
+    cursor: pointer;
+    width: 70%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .SideBar .Runingicon {
-    height: 4.375rem;
     position: relative;
     
 }
 
 .SideBar .Joggingicon {
-    height: 4.375rem;
+ 
     position: relative;
 }
 
 .SideBar .Swimmingicon {
-    height: 4.375rem;
+
     position: relative;
 }
 
 .SideBar .Yogaicon {
-    height: 4.375rem;
+   
     position: relative;
 }
 
 .SideBar .Aerobicicon {
-    height: 4.375rem;
+    
     position: relative;
 }
 
 .SideBar .Strengthtrainningicon {
-    height: 4.375rem;
+    
     position: relative;
 }
 
 .SideBar .Othersicon {
-    height: 4.5rem;
-    margin-left: 1.2rem;
     position: relative;
 }
 
 .SideBar .Addposticon {
-    height: 4.375rem;
     position: relative;
+    
 }

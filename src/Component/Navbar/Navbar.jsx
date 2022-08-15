@@ -43,18 +43,18 @@ function Navbar() {
                 </div>
 
                 <div className="login-name">
-                    <button><Link to='/login' style={{ textDecoration: 'none', color: 'black'  }}><a id='#' className="sign-in"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></Link></button>
-                    <button><Link to='/Register' style={{ textDecoration: 'none', color: 'black'  }}><a id='#' className="sign-up"><i class="fa-solid fa-user-plus"></i>Sign up</a></Link></button>
+                    <button><Link to='/login' style={{ textDecoration: 'none', color: 'black'  }}><i className="fa-solid fa-right-to-bracket sign-in"></i>Sign in</Link></button>
+                    <button><Link to='/Register' style={{ textDecoration: 'none', color: 'black'  }}><i className="fa-solid fa-user-plus sign-up"></i>Sign up</Link></button>
                 </div>
                 <div className="nav-mobile">
                     <div className="toggle-bar">
-                        <i class="fa-solid fa-bars" onClick={toggleMobile}></i>
+                        <i className="fa-solid fa-bars" onClick={toggleMobile}></i>
                     </div>
                     <div className={tabMobile ? "tab-mobile active" : "tab-mobile"}>
                         <div className="container-mobile">
                             <div className="mobile-login-name">
-                                <button onClick={toggleMobile}><Link to='/login'><i class="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></Link></button>
-                                <button onClick={toggleMobile}><Link to='/Register'><i class="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></Link></button>
+                                <button onClick={toggleMobile}><Link to='/login'><i className="fa-solid fa-right-to-bracket sign-in"></i>Sign in</Link></button>
+                                <button onClick={toggleMobile}><Link to='/Register'><i className="fa-solid fa-user-plus sign-up"></i>Sign up</Link></button>
                             </div>
                             <div className="mobile-ul">
                                 <ul className="mobile-nav-ul">
