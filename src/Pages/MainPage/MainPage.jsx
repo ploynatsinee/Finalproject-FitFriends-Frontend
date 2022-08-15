@@ -13,7 +13,6 @@ function MainPage() {
       <div className='main-session'>
         <div className='App-sidebar'>
           <SideBar />
-          <Notification />
         </div>
 
         <div className='feed'>
