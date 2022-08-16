@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './SideBar.scss'
-import Runningicon from './Runningicon.png'
-import Joggingicon from './Joggingicon.png'
-import Swimmingicon from './Swimmingicon.png'
-import Yogaicon from './Yogaicon.png'
-import Aerobicicon from './Aerobicicon.png'
-import Strengthtrainningicon from './Strengthtrainningicon.png'
-import Othersicon from './Othersicon.png'
-import Addposticon from './Addposticon.png'
+import Runningicon from './imgicon/Runningicon.png'
+import Joggingicon from './imgicon/Joggingicon.png'
+import Swimmingicon from './imgicon/Swimmingicon.png'
+import Yogaicon from './imgicon/Yogaicon.png'
+import Aerobicicon from './imgicon/Aerobicicon.png'
+import Strengthtrainingicon from './imgicon/Strengthtrainingicon.png'
+
+import Plusicon from './imgicon/Plusicon.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Notification from '../Notification/Notification'
 import { useNavigate } from "react-router-dom";
@@ -32,15 +32,16 @@ const SideBar = () => {
   return (
     // <Router>
     <div className='SideBar'>
-      <button className='btn Runingicon'>running<Notification count={runningNotiCount} /></button>
-      <button className='btn Joggingicon'>Jogging<Notification count={JoggingNotiCount} /></button>
-      <button className='btn Swimmingicon'>Swimming<Notification count={SwimmingNotiCount} /></button>
-      <button className='btn Yogaicon'>Yoga<Notification count={YogaNotiCount} /></button>
-      <button className='btn Aerobicicon'>Aerobic<Notification count={AerobicNotiCount} /></button>
-      <button className='btn Strengthtrainningicon'>Strengthtrainning<Notification count={StrengthtrainningNotiCount} /></button>
+     
+      <button className='btn Runingicon'><img src={Runningicon}/>running<Notification count={runningNotiCount} /></button>
+      <button className='btn Joggingicon'><img src={Joggingicon}/>Jogging<Notification count={JoggingNotiCount} /></button>
+      <button className='btn Swimmingicon'><img src={Swimmingicon}/>Swimming<Notification count={SwimmingNotiCount} /></button>
+      <button className='btn Yogaicon'><img src={Yogaicon}/>Yoga<Notification count={YogaNotiCount} /></button>
+      <button className='btn Aerobicicon'><img src={Aerobicicon}/>Aerobic<Notification count={AerobicNotiCount} /></button>
+      <button className='btn Strengthtrainningicon'><img src={Strengthtrainingicon}/>Strengh<Notification count={StrengthtrainningNotiCount} /></button>
       <button className='btn Othersicon'>Others</button>
 
-      <button onClick={handleSubmit} className='btn Addposticon'>Addpost</button>
+      <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon}/>Addpost</button>
 
     </div>
     // </Router> 
