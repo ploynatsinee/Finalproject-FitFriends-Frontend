@@ -18,6 +18,7 @@
     "@mui/material": "^5.9.2",
     "@mui/styled-engine-sc": "^5.8.0",
     "@mui/x-date-pickers-pro": "^5.0.0-beta.4",
+    "axios": "^0.27.2",
     "date-fns": "^2.29.1",
     "inter-ui": "^3.19.3",
     "react": "^18.2.0",
