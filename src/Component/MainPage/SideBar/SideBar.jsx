@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import './SideBar.scss'
-import Runningicon from './imgicon/Runningicon.png'
-import Joggingicon from './imgicon/Joggingicon.png'
-import Swimmingicon from './imgicon/Swimmingicon.png'
-import Yogaicon from './imgicon/Yogaicon.png'
-import Aerobicicon from './imgicon/Aerobicicon.png'
-import Strengthtrainingicon from './imgicon/Strengthtrainingicon.png'
+import React, { useState } from 'react';
+import './SideBar.scss';
+import Runningicon from './imgicon/Runningicon.png';
+import Joggingicon from './imgicon/Joggingicon.png';
+import Swimmingicon from './imgicon/Swimmingicon.png';
+import Yogaicon from './imgicon/Yogaicon.png';
+import Aerobicicon from './imgicon/Aerobicicon.png';
+import Strengthtrainingicon from './imgicon/Strengthtrainingicon.png';
 
-import Plusicon from './imgicon/Plusicon.png'
+import Plusicon from './imgicon/Plusicon.png';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Notification from '../Notification/Notification'
+import Notification from '../Notification/Notification';
 import { useNavigate } from "react-router-dom";
 
 
