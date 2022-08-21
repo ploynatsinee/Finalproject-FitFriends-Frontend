@@ -38,10 +38,15 @@ const SideBar = () => {
     axios.get(`${url}/activities/activity_types/yoga`).then((res) => {
       setYogaNotiCount(res.data)
     })
-    axios.get(`${url}/activities/activity_types/yoga`).then((res) => {
-      setYogaNotiCount(res.data)
+    axios.get(`${url}/activities/activity_types/aerobic`).then((res) => {
+      setAerobicNotiCount(res.data)
     })
-    
+    axios.get(`${url}/activities/activity_types/strength`).then((res) => {
+      setStrengthtrainningNotiCount(res.data)
+    })
+    axios.get(`${url}/activities/activity_types/others`).then((res) => {
+      setOthersNotiCount(res.data)
+    })
   },[])
 
 
