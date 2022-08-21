@@ -8,7 +8,7 @@ import locationicon from './img/locationicon.png';
 import send from './img/send.png';
 
 
-export const Post = ({ profilePic, image, username, timestamp, message, location }) => {
+export const Post = ({ profilePic, activitesPhoto, username, timestamp, message, location }) => {
     return (
         <div className="post">
             <div className="postLeft">
@@ -23,7 +23,7 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
             <div className="postRight">
                 <p> {message}</p>
                 <div className="postImage">
-                    <img src={image} alt=""/>
+                    <img src={activitesPhoto} alt=""/>
                 </div>
 
 
@@ -36,7 +36,7 @@ export const Post = ({ profilePic, image, username, timestamp, message, location
                         <p><img src={send} alt='send' />chat</p>
                     </div>
                     <div className="location">
-                        <p><img src={locationicon} alt='locationicon' />{location}Bangkok</p>
+                        <p><img src={locationicon} alt='locationicon' />{location}</p>
                     </div>
                 </div>
             </div>

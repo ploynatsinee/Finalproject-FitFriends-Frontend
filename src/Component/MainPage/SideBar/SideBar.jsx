@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './SideBar.scss';
 import Runningicon from './imgicon/Runningicon.png';
 import Joggingicon from './imgicon/Joggingicon.png';
@@ -15,7 +15,7 @@ import axios from "axios";
 
 
 
-const SideBar = () => {
+const SideBar = ({filterActivity}) => {
   const url = "http://localhost:3000"
   const [runningNotiCount, setrunningNotiCount] = useState(0)
   const [JoggingNotiCount, setJoggingNotiCount] = useState(0)
@@ -25,7 +25,7 @@ const SideBar = () => {
   const [StrengthtrainningNotiCount, setStrengthtrainningNotiCount] = useState(0)
   const [OthersNotiCount, setOthersNotiCount] = useState(0)
   useEffect(() => {
-    
+
     axios.get(`${url}/activities/activity_types/running`).then((res) => {
       setrunningNotiCount(res.data)
     })
@@ -47,30 +47,32 @@ const SideBar = () => {
     axios.get(`${url}/activities/activity_types/others`).then((res) => {
       setOthersNotiCount(res.data)
     })
-  },[])
+  }, [])
 
 
   function handleSubmit(event) {
     event.preventDefault();
     navigate("/Post", { replace: true });
   }
-
+ 
+  
   return (
-   
+
+
     <div className='SideBar'>
-     
-      <button className='btn Runingicon'><img src={Runningicon}/>running<Notification count={runningNotiCount} /></button>
-      <button className='btn Joggingicon'><img src={Joggingicon}/>Jogging<Notification count={JoggingNotiCount} /></button>
-      <button className='btn Swimmingicon'><img src={Swimmingicon}/>Swimming<Notification count={SwimmingNotiCount} /></button>
-      <button className='btn Yogaicon'><img src={Yogaicon}/>Yoga<Notification count={YogaNotiCount} /></button>
-      <button className='btn Aerobicicon'><img src={Aerobicicon}/>Aerobic<Notification count={AerobicNotiCount} /></button>
-      <button className='btn Strengthtrainningicon'><img src={Strengthtrainingicon}/>Strengh<Notification count={StrengthtrainningNotiCount} /></button>
+
+      <button className='btn Runingicon' onClick={() => setfilterActivity(current => current + 1)}><img src={Runningicon} />running<Notification count={runningNotiCount} /></button>
+      <button className='btn Joggingicon'><img src={Joggingicon} />Jogging<Notification count={JoggingNotiCount} /></button>
+      <button className='btn Swimmingicon'><img src={Swimmingicon} />Swimming<Notification count={SwimmingNotiCount} /></button>
+      <button className='btn Yogaicon'><img src={Yogaicon} />Yoga<Notification count={YogaNotiCount} /></button>
+      <button className='btn Aerobicicon'><img src={Aerobicicon} />Aerobic<Notification count={AerobicNotiCount} /></button>
+      <button className='btn Strengthtrainningicon'><img src={Strengthtrainingicon} />Strengh<Notification count={StrengthtrainningNotiCount} /></button>
       <button className='btn Othersicon'>Others<Notification count={OthersNotiCount} /></button>
 
-      <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon}/>Addpost</button>
+      <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon} />Addpost</button>
 
     </div>
-   
+
 
   )
 }

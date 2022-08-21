@@ -15,11 +15,12 @@ const CommunityBox = ({ activitesGroup }) => {
           message={activity.captions}
           timestamp={new Date(activity.date_post).toLocaleString()}
           username={activity.username}
+          location= {activity.location}
         />
-
         )
 
       })}
+      
 
     </div>
   )
