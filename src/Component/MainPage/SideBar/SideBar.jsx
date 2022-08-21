@@ -56,7 +56,7 @@ const SideBar = () => {
   }
 
   return (
-    // <Router>
+   
     <div className='SideBar'>
      
       <button className='btn Runingicon'><img src={Runningicon}/>running<Notification count={runningNotiCount} /></button>
@@ -70,7 +70,7 @@ const SideBar = () => {
       <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon}/>Addpost</button>
 
     </div>
-    // </Router> 
+   
 
   )
 }
