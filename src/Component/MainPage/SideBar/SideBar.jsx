@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import './SideBar.scss';
 import Runningicon from './imgicon/Runningicon.png';
 import Joggingicon from './imgicon/Joggingicon.png';
@@ -11,17 +11,38 @@ import Plusicon from './imgicon/Plusicon.png';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Notification from '../Notification/Notification';
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 
 const SideBar = () => {
-
-  let navigate = useNavigate();
-  const runningNotiCount = 10
-  const JoggingNotiCount = 0
-  const SwimmingNotiCount = 2
-  const YogaNotiCount = 0
-  const AerobicNotiCount = 3
-  const StrengthtrainningNotiCount = 30
+  const url = "http://localhost:3000"
+  const [runningNotiCount, setrunningNotiCount] = useState(0)
+  const [JoggingNotiCount, setJoggingNotiCount] = useState(0)
+  const [SwimmingNotiCount, setSwimmingNotiCount] = useState(0)
+  const [YogaNotiCount, setYogaNotiCount] = useState(0)
+  const [AerobicNotiCount, setAerobicNotiCount] = useState(0)
+  const [StrengthtrainningNotiCount, setStrengthtrainningNotiCount] = useState(0)
+  const [OthersNotiCount, setOthersNotiCount] = useState(0)
+  useEffect(() => {
+    
+    axios.get(`${url}/activities/activity_types/running`).then((res) => {
+      setrunningNotiCount(res.data)
+    })
+    axios.get(`${url}/activities/activity_types/jogging`).then((res) => {
+      setJoggingNotiCount(res.data)
+    })
+    axios.get(`${url}/activities/activity_types/swimming`).then((res) => {
+      setSwimmingNotiCount(res.data)
+    })
+    axios.get(`${url}/activities/activity_types/yoga`).then((res) => {
+      setYogaNotiCount(res.data)
+    })
+    axios.get(`${url}/activities/activity_types/yoga`).then((res) => {
+      setYogaNotiCount(res.data)
+    })
+    
+  },[])
 
 
   function handleSubmit(event) {
@@ -39,7 +60,7 @@ const SideBar = () => {
       <button className='btn Yogaicon'><img src={Yogaicon}/>Yoga<Notification count={YogaNotiCount} /></button>
       <button className='btn Aerobicicon'><img src={Aerobicicon}/>Aerobic<Notification count={AerobicNotiCount} /></button>
       <button className='btn Strengthtrainningicon'><img src={Strengthtrainingicon}/>Strengh<Notification count={StrengthtrainningNotiCount} /></button>
-      <button className='btn Othersicon'>Others</button>
+      <button className='btn Othersicon'>Others<Notification count={OthersNotiCount} /></button>
 
       <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon}/>Addpost</button>
 
