@@ -10,7 +10,7 @@ import send from './img/send.png';
 
 export const Post = ({ profilePic, activitesPhoto, username, timestamp, message, location }) => {
     return (
-        <div className="post">
+        <div className="post" >
             <div className="postLeft">
                 <Avatar src={profilePic} className="postAvatar" />
 
