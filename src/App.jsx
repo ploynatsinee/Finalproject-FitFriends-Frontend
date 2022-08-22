@@ -18,22 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar />
-      <div className='main-session'>
-         <div className='App-sidebar'>
-           <SideBar />
-        </div> */}
-        {/* <MainPage/> */}
-        {/* <div className='feed'>
-           < CommunityBox />
-         </div>
-         <div className='useronline'>
-           <Useronline />
-         </div>
-       </div>  */}
+     
       <BrowserRouter>
         <Navbar />
-        {/* นอก tag Routes คือการใส่ทุกหน้า */}
         <Routes>
           <Route path='/' element= {<MainPage />} />
           <Route path='/Register' element= {<Register />} />
