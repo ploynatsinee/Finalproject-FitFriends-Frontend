@@ -15,7 +15,7 @@ import axios from "axios";
 
 
 
-const SideBar = ({filterActivity}) => {
+const SideBar = (props) => {
   const url = "http://localhost:3000"
   const [runningNotiCount, setrunningNotiCount] = useState(0)
   const [JoggingNotiCount, setJoggingNotiCount] = useState(0)
@@ -61,13 +61,13 @@ const SideBar = ({filterActivity}) => {
 
     <div className='SideBar'>
 
-      <button className='btn Runingicon' onClick={() => setfilterActivity(current => current + 1)}><img src={Runningicon} />running<Notification count={runningNotiCount} /></button>
-      <button className='btn Joggingicon'><img src={Joggingicon} />Jogging<Notification count={JoggingNotiCount} /></button>
-      <button className='btn Swimmingicon'><img src={Swimmingicon} />Swimming<Notification count={SwimmingNotiCount} /></button>
-      <button className='btn Yogaicon'><img src={Yogaicon} />Yoga<Notification count={YogaNotiCount} /></button>
-      <button className='btn Aerobicicon'><img src={Aerobicicon} />Aerobic<Notification count={AerobicNotiCount} /></button>
-      <button className='btn Strengthtrainningicon'><img src={Strengthtrainingicon} />Strengh<Notification count={StrengthtrainningNotiCount} /></button>
-      <button className='btn Othersicon'>Others<Notification count={OthersNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(1)} className='btn Runingicon'><img src={Runningicon}/>running<Notification count={runningNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(2)} className='btn Joggingicon'><img src={Joggingicon} />Jogging<Notification count={JoggingNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(3)} className='btn Swimmingicon'><img src={Swimmingicon} />Swimming<Notification count={SwimmingNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(4)}className='btn Yogaicon'><img src={Yogaicon} />Yoga<Notification count={YogaNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(5)}className='btn Aerobicicon'><img src={Aerobicicon} />Aerobic<Notification count={AerobicNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(6)}className='btn Strengthtrainningicon'><img src={Strengthtrainingicon} />Strengh<Notification count={StrengthtrainningNotiCount} /></button>
+      <button onClick={()=>props.groupActivity(7)}className='btn Othersicon'>Others<Notification count={OthersNotiCount} /></button>
 
       <button onClick={handleSubmit} className='btn Addposticon'><img src={Plusicon} />Addpost</button>
 
