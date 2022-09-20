@@ -1,0 +1,10 @@
+version: "3"
+services:
+       fitfriendsfrontend:
+           container_name: fitfriendsfrontend
+           image: latest123/app
+           restart: always
+           build: .
+           ports:
+             - "3000:3000"
+           
